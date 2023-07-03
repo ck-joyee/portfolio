@@ -35,6 +35,20 @@
   .animate-pulse {
     animation: pulse 2s infinite;
   }
+  @keyframes scale-up {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .scale-up {
+    animation: scale-up 0.5s ease-in-out;
+  }
 
   .skill-icons {
     display: flex;
@@ -125,8 +139,29 @@
   .text-gradient {
     @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold hover:from-[#FF56F6] hover:to-[#42A6E3];
   }
+  .bg-gradient {
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold hover:from-[#FF56F6] hover:to-[#42A6E3];
+  }
 
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+
+  .fade-enter {
+    opacity: 0;
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+  }
+  
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 500ms;
   }
 }

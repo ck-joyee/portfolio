@@ -18,8 +18,8 @@ const Contact = () => {
           });
       };
   return (
-    <div className="section font-mono" id="contact">
-      <div className="container mx-auto p-8">
+    <div className="section font-mono text-center" id="contact">
+      <div className="container mx-auto p-2">
         <div className="flex flex-col items-center">
           <motion.div
             className="mb-4 mt-3 contact-sec"
@@ -27,14 +27,14 @@ const Contact = () => {
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <h4 className="text-4xl mb-4 text-gradient">Contact Me!!!</h4>
+            <h4 className=" mb-4 h2 text-gradient  scale-up">Contact Me!!!</h4>
             <form
               ref={form}
               onSubmit={sendEmail}
             >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="name" className="block mb-2 text-gradient">
+                  <label htmlFor="name" className="block mb-2 text-gradient animate-pulse">
                     Full Name
                   </label>
                   <input
@@ -46,7 +46,7 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block mb-2 text-gradient">
+                  <label htmlFor="email" className="block mb-2 text-gradient animate-pulse">
                     Email
                   </label>
                   <input
@@ -58,7 +58,7 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              <label htmlFor="message" className="block mb-2 text-gradient">
+              <label htmlFor="message" className="block mb-2 text-gradient animate-pulse">
                 Message
               </label>
               <textarea
@@ -69,7 +69,7 @@ const Contact = () => {
                 required
               ></textarea>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div className="text-center my-10 text-gradient ">
+                <div className="text-center my-10 text-gradient animate-pulse ">
                   <img
                     src={addressIcon}
                     alt="Address"
@@ -78,7 +78,7 @@ const Contact = () => {
                   <p>Address</p>
                   <p>Shibgonj, Sylhet, Bangladesh</p>
                 </div>
-                <div className="text-center my-10 text-gradient">
+                <div className="text-center my-10 text-gradient  animate-pulse">
                   <img
                     src={phoneIcon}
                     alt="Phone"
@@ -87,7 +87,7 @@ const Contact = () => {
                   <p>Phone</p>
                   <p>01624068657</p>
                 </div>
-                <div className="text-center my-10 text-gradient">
+                <div className="text-center my-10 text-gradient  animate-pulse">
                   <img
                     src={emailIcon}
                     alt="Email"

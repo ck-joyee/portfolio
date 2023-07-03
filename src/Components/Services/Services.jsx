@@ -32,9 +32,9 @@ const Services = () => {
   ];
 
   return (
-    <section className="section font-mono text-center mt-16" id="services">
+    <section className="section font-mono text-center mt-8" id="services">
       <div className="container mx-auto">
-        <h2 className="text-3xl text-center mb-10">Skills</h2>
+        <h2 className="text-3xl text-center text-gradient animate-pulse mb-10">Skills</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
           {skills.map((skill, index) => (
             <div key={index} className="text-center mx-4 my-2">

@@ -27,7 +27,7 @@ const projects = [
   ];
 const Work = () => {
     return (
-        <section className="section py-10 m-10 font-mono text-center" id="work">
+        <section className="section py-10 ml-10 mr-10 font-mono text-center" id="work">
             <div className="container mx-auto">
         <h2 className="h2 text-gradient scale-up">My Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

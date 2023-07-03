@@ -18,7 +18,7 @@ const Contact = () => {
           });
       };
   return (
-    <div className="section font-mono text-center" id="contact">
+    <div className="section font-mono text-center mb-52" id="contact">
       <div className="container mx-auto p-2">
         <div className="flex flex-col items-center">
           <motion.div
@@ -27,14 +27,14 @@ const Contact = () => {
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <h4 className=" mb-4 h2 text-gradient  scale-up">Contact Me!!!</h4>
+            <h4 className=" mb-4 h2 text-gradient  scale-up">Contact Me</h4>
             <form
               ref={form}
               onSubmit={sendEmail}
             >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="name" className="block mb-2 text-gradient animate-pulse">
+                  <label htmlFor="name" className="block mb-2 text-gradient">
                     Full Name
                   </label>
                   <input
@@ -46,7 +46,7 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block mb-2 text-gradient animate-pulse">
+                  <label htmlFor="email" className="block mb-2 text-gradient">
                     Email
                   </label>
                   <input
@@ -58,7 +58,7 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              <label htmlFor="message" className="block mb-2 text-gradient animate-pulse">
+              <label htmlFor="message" className="block mb-2 text-gradient">
                 Message
               </label>
               <textarea
@@ -99,7 +99,7 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="btn mt-10 text-white py-2 px-4 rounded-lg w-3/4 mx-20"
+                className="btn mt-10 text-white py-2 px-4 rounded-lg w-3/4 mx-auto"
               >
                 Submit Form
               </button>

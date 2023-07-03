@@ -4,6 +4,60 @@
 
 @layer base {
   
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-bounce {
+    animation: bounce 1s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .animate-pulse {
+    animation: pulse 2s infinite;
+  }
+
+  .skill-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .skill-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skill-icon img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .skill-icon p {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+
   .btn {
     background: linear-gradient(
       92.23deg,

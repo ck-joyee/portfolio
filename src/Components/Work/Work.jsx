@@ -27,16 +27,17 @@ const projects = [
   ];
 const Work = () => {
     return (
-        <section className="section py-10 ml-10 mr-10 font-mono text-center" id="work">
+        <section className="section py-10 ml-10 mr-10 font-mono text-center " id="work">
             <div className="container mx-auto">
         <h2 className="h2 text-gradient scale-up">My Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {projects.map((project) => (
             <motion.div
-              key={project.id}
-              className="bg-gradient shadow-lg rounded-lg overflow-hidden mb-20"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+            key={project.id}
+            className="shadow-lg rounded-lg overflow-hidden mb-20"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            style={{ border: '1px solid gray' }}
             >
               <img
                 src={project.image}
@@ -44,7 +45,7 @@ const Work = () => {
                 className="w-full h-48 object-cover scale-up"
               />
               <div className="p-4">
-                <h3 className="text-xl font-bold mb-2 scale-up">{project.title}</h3>
+                <h3 className="text-xl text-gradient font-bold mb-2 scale-up">{project.title}</h3>
                 <p className="text-gray-600 mb-4 scale-up">{project.description}</p>
                 <a
                   href={project.liveLink}

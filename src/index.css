@@ -3,20 +3,8 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply font-secondary text-lg leading-8 text-white;
-  }
-
-  .h2 {
-    @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
-  }
-
-  .h3 {
-    @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
-  }
-
+  
   .btn {
-    @apply rounded-full font-primary text-white font-medium;
     background: linear-gradient(
       92.23deg,
       #ff56f6 21.43%,
@@ -26,7 +14,7 @@
     );
     box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
   }
-
+  
   .btn:hover {
     background: linear-gradient(
       92.23deg,
@@ -36,7 +24,7 @@
       #ff56f6 117.04%
     );
   }
-
+  
   .gradient,
   .active {
     background: linear-gradient(
@@ -47,11 +35,25 @@
       #ff56f6 117.04%
     );
   }
+  
 
   .active {
-    color: #fff;
+    color: black;
     padding: 1rem;
     border-radius: 100%;
+  }
+
+  body {
+    @apply  text-lg leading-8 text-white;
+  }
+  .h2 {
+    @apply  text-[32px] mb-6 tracking-[10%] uppercase;
+  }
+  .h3 {
+    @apply font-semibold text-[26px] mb-6 leading-[46px];
+  }
+  .btn {
+    @apply rounded-full text-white font-medium;
   }
 
   .btn-sm {
@@ -63,11 +65,11 @@
   }
 
   .btn-link {
-    @apply text-base;
+    @apply text-base text-gradient;
   }
 
   .text-gradient {
-    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold hover:from-[#FF56F6] hover:to-[#42A6E3];
   }
 
   .section {

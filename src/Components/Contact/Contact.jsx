@@ -99,7 +99,7 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="btn mt-10 text-white py-2 px-4 rounded-lg w-3/4 mx-auto"
+                className="btn mt-10 py-2 px-4 rounded-lg w-3/4 mx-auto"
               >
                 Submit Form
               </button>
